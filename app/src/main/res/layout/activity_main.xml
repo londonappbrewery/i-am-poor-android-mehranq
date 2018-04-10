@@ -11,26 +11,32 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.londonappbrewery.iampoor.MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="33dp"
-        android:background="@color/colorPrimaryDark"
-        android:text="@string/title"
-        android:textColor="#FFFFFF"
-        android:textSize="40sp" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView"
-        android:layout_marginTop="27dp"
-        android:contentDescription="@string/coal_image_desc"
+        android:layout_centerInParent="true"
+        android:contentDescription="@strings/coal_image_desc"
         app:srcCompat="@drawable/coal" />
+
+    <TextView
+        android:id="@+id/textViewPoor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textViewRich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp"
+        android:text="@string/sub_title"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="40sp" />
 </RelativeLayout>
